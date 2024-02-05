@@ -18,7 +18,7 @@ const struct retro_system_av_info SYSTEM_AV_INFO = {
     },
     .timing = {
         .fps = 60.0,
-        .sample_rate = 44.1,
+        .sample_rate = 44100,
     },
 };
 
