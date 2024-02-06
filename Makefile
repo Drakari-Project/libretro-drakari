@@ -11,7 +11,7 @@ $(ODIR)/%.o: $(SDIR)/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS) $(LDLIBS)
 
 build: $(OBJ)
-	$(CC) -shared -o libretro_drakari.so $^ $(CFLAGS) $(LDLIBS)
+	$(CC) -shared -o libretro_drakari.dylib $^ $(CFLAGS) $(LDLIBS)
 
 clean:
 	rm $(ODIR)/*.o
